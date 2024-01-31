@@ -36,6 +36,7 @@ Inserting is done by locating the chunk that should contain the new key-value pa
 #### Getting proofs
 
 Proofs are obtained as per a normal binary tree. The hash values of sibling nodes are appended in the proof while the tree is traversed. Proofs for individual key-value pairs need to traverse the "heap-like" tree of hashes contained in the chunk using the property:
+
 $$
 child(i)= \begin{cases}
 {2i+1} \text{ (left)}\\
